@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Know about CanWeBe!
+          Know more about CanWeBe!
         </a>
       </header>
     </div>
