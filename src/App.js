@@ -14,6 +14,7 @@ function App() {
         >
           Know about CanWeBe!
         </a>
+        <a href="https://discord.gg/CXpyuFfaZN">Join Our Discord Server</a>
       </header>
     </div>
   )
