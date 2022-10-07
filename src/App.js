@@ -1,23 +1,18 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Layout from './components/layout'
+import Guides from './pages/guides'
+import Home from './pages/home'
+import Login from './pages/login'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Helllo There</h1>
-        <img src="/cwbclub.svg" className="App-logo" alt="logo" />
-        <p>Your coding club's platform is under process.</p>
-        <a
-          className="App-link"
-          href="https://canwebe.tech"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Know more about CanWeBe!
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/guides" element={<Guides />} />
+        <Route path="/login" element={<Login />} />
+      </Route>
+    </Routes>
   )
 }
-
-export default App
