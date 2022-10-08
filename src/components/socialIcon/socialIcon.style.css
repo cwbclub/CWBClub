@@ -1,0 +1,35 @@
+.socialIcon {
+  background-color: white;
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.socialIcon:hover {
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #1877f2;
+}
+.linkedin:hover {
+  background-color: #0a66c2;
+}
+
+.github:hover {
+  background-color: #131418;
+}
+.twitter:hover {
+  background-color: #1da1f2;
+}
+.instagram:hover {
+  background-color: #e4405f;
+}
+.discord:hover {
+  background-color: #7289da;
+}

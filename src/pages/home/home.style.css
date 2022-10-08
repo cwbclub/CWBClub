@@ -7,28 +7,12 @@
   place-items: center;
   position: sticky;
   top: 0;
+  background-color: beige;
 }
 
 .headerSection .textbox {
   max-width: 800px;
   text-align: center;
-}
-
-.headerSection:nth-child(1) {
-  background-color: beige;
-}
-
-section:nth-child(2) {
-  background-color: aliceblue;
-  min-height: 100vh;
-  box-shadow: 0 -1px 18px -2px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 1;
-}
-section:nth-child(3) {
-  min-height: 100vh;
-  background-color: rgb(177, 192, 205);
-  box-shadow: 0 -1px 13px -3px rgba(0, 0, 0, 0.7);
 }
 
 /* Text Box */
@@ -65,8 +49,174 @@ section:nth-child(3) {
   color: orangered;
 }
 
-.github {
+.githubCorner {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.secondSection {
+  box-shadow: 0 -2px 17px -2px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  /* padding: 0 30px; */
+}
+
+/* Why US Section */
+
+.whyus {
+  padding: 60px 30px;
+}
+
+.whyus h2 {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  word-spacing: -8px;
+  font-weight: 500;
+}
+
+.whyus h2::after {
+  content: '';
+  width: 80px;
+  height: 2px;
+  background-color: var(--color-cwb);
+  display: block;
+  margin: 3px auto 17px;
+}
+
+.whyus .para {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.whyusFlex {
+  display: flex;
+  max-width: 1000px;
+  margin: 50px auto;
+  justify-content: space-evenly;
+}
+
+.whyusCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 22px 17px;
+  transition: all 0.35s ease-in-out;
+}
+
+.whyusCard:hover {
+  box-shadow: 2px 3px 25px rgba(0, 0, 0, 0.2);
+}
+
+.whyusCard img {
+  width: 120px;
+  height: 120px;
+}
+
+.whyusCard .subheader {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.whyusCard .info {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Social Medias */
+.socials {
+  background-color: #d4d7fb;
+  padding: 60px 30px;
+}
+.socials p {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #d7a6ee;
+  background-color: #a4a7d4;
+  width: fit-content;
+  padding: 2px 30px;
+  margin: 0 auto;
+  border-bottom: 3px solid var(--color-cwb);
+}
+
+.socialWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* About */
+
+.about {
+  padding: 90px 30px;
+  display: grid;
+  place-items: center;
+  background-color: #abadc9;
+}
+
+.aboutCard {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  padding: 40px;
+  gap: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.aboutCard::after {
+  content: '';
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  background-color: blueviolet;
+  right: 0;
+  top: 0;
+}
+
+.aboutCard .content {
+  flex-basis: 50%;
+}
+.aboutCard img {
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.aboutCard .content h4 {
+  font-size: 1.3rem;
+  width: fit-content;
+}
+.aboutCard .content h4::after {
+  content: '';
+  height: 2px;
+  background-color: var(--color-cwb);
+  display: block;
+  margin: 2px 0 10px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(45, 45, 45);
+  color: rgba(255, 255, 255, 0.744);
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.8rem;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.744);
 }
