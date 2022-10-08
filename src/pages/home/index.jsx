@@ -4,6 +4,7 @@ import whyus1 from '../../assets/whyus1.svg'
 import whyus2 from '../../assets/whyus2.svg'
 import whyus3 from '../../assets/whyus3.svg'
 import SocialIcon from '../../components/socialIcon'
+import { FaAngleDoubleDown } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       <section className="headerSection">
         <div className="githubCorner">
           <GithubCorner />
+        </div>
+        <div className="downArrow">
+          <FaAngleDoubleDown />
         </div>
         <div className="textbox">
           <p className="subheader">Your Own Coding Club</p>
