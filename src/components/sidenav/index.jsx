@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import './sidenav.style.css'
 import logo from '../../assets/cwbclub.svg'
-import { FaBook, FaHome, FaUserGraduate, FaUserTie } from 'react-icons/fa'
+import { FaBook, FaHome, FaUserGraduate, FaUserTie ,FaBloggerB } from 'react-icons/fa'
 import { MdLogin } from 'react-icons/md'
 
 export default function Sidenav() {
@@ -37,6 +37,9 @@ export default function Sidenav() {
         </NavLink>
         <NavLink to="projects" end={true}>
           <FaBook /> Projects
+        </NavLink>
+        <NavLink to="blogs" end={true}>
+          <FaBloggerB  /> Blogs
         </NavLink>
       </div>
       <div className="bottomDiv">

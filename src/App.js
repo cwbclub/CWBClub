@@ -5,6 +5,7 @@ import Guides from './pages/guides'
 import Home from './pages/home'
 import Login from './pages/login'
 import Projects from './pages/projects'
+import Blogs from './pages/blogs'
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/guides" element={<Guides />} />
         <Route path="/login" element={<Login />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/blogs" element={<Blogs />} />
       
       </Route>
     </Routes>
