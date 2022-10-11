@@ -69,7 +69,7 @@ nav {
 
 .navitems a.active {
   background-color: #3b4354d1;
-  color: white;
+  color: #fff;
 }
 
 .navitems a:hover {
