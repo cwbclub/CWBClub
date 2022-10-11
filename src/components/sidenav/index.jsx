@@ -1,9 +1,11 @@
 import { Link, NavLink } from 'react-router-dom'
 import './sidenav.style.css'
 import logo from '../../assets/cwbclub.svg'
-import { FaBook, FaHome, FaUserGraduate, FaUserTie ,FaBloggerB } from 'react-icons/fa'
+import {  FaHome,FaBloggerB } from 'react-icons/fa'
 import { IoIosPeople} from 'react-icons/io'
+import { BsBook} from 'react-icons/bs'
 import { HiOutlineCollection} from 'react-icons/hi'
+
 import { MdLogin } from 'react-icons/md'
 
 export default function Sidenav() {
@@ -34,7 +36,7 @@ export default function Sidenav() {
           Members
         </NavLink>
         <NavLink to="guides" end={true}>
-          <FaUserTie />
+          <BsBook/>
           Guides
         </NavLink>
         <NavLink to="projects" end={true}>
