@@ -1,0 +1,27 @@
+.loginBody {
+  padding-left: 300px;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.loginCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 7px;
+}
+
+.loginCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.loginCard button {
+  padding: 7px 10px;
+  font-size: 1.1rem;
+}

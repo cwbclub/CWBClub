@@ -1,5 +1,10 @@
 import { initializeApp } from 'firebase/app'
-import { getAuth } from 'firebase/auth'
+import {
+  FacebookAuthProvider,
+  getAuth,
+  GithubAuthProvider,
+  GoogleAuthProvider,
+} from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
@@ -19,3 +24,7 @@ export const db = getFirestore(firebaseApp)
 // enableIndexedDbPersistence(db).catch((err) => {
 //   console.error(err.message)
 // })
+
+export const googleProvider = new GoogleAuthProvider()
+export const facebookProvider = new FacebookAuthProvider()
+export const githubProvider = new GithubAuthProvider()
