@@ -4,8 +4,6 @@ import logo from '../../assets/cwbclub.svg'
 import {  FaHome,FaBloggerB ,FaUsers ,FaBookReader,FaBookOpen ,FaArrowRight} from 'react-icons/fa'
 
 
-import { MdLogin } from 'react-icons/md'
-
 export default function Sidenav() {
   return (
     <nav>
