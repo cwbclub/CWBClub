@@ -87,7 +87,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 9px;
   margin-top: auto;
   padding: 10px;
   color: white;
@@ -105,5 +105,5 @@ nav {
 }
 
 .loginBtn:active {
-  transform: scale(0.98);
+  background-color: #143881;
 }
