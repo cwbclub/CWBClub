@@ -5,13 +5,10 @@ import whyus2 from '../../assets/whyus2.svg'
 import whyus3 from '../../assets/whyus3.svg'
 import SocialIcon from '../../components/socialIcon'
 import { FaAngleDoubleDown } from 'react-icons/fa'
-import { useUser } from '../../context/userContext'
 
 export default function Home() {
-  const res = useUser()
-  console.log('user', res)
   return (
-    <div className="homeBody">
+    <div className="mainBody">
       <section className="headerSection">
         <div className="githubCorner">
           <GithubCorner />

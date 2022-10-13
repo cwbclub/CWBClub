@@ -1,10 +1,22 @@
 import { Link, NavLink } from 'react-router-dom'
 import './sidenav.style.css'
 import logo from '../../assets/cwbclub.svg'
-import {  FaHome,FaBloggerB ,FaUsers ,FaBookReader,FaBookOpen ,FaArrowRight} from 'react-icons/fa'
-
+import {
+  FaHome,
+  FaBloggerB,
+  FaUsers,
+  FaBookReader,
+  FaBookOpen,
+  FaArrowRight,
+  FaSignInAlt,
+} from 'react-icons/fa'
+import { useAuth } from '../../context/AuthContext'
+import useLogout from '../../hooks/useLogout'
+import ProfileBanner from '../profileBanner'
 
 export default function Sidenav() {
+  const { user } = useAuth()
+
   return (
     <nav>
       <div className="logo">
@@ -32,20 +44,24 @@ export default function Sidenav() {
           Members
         </NavLink>
         <NavLink to="guides" end={true}>
-          <FaBookReader/>
+          <FaBookReader />
           Guides
         </NavLink>
         <NavLink to="projects" end={true}>
           <FaBookOpen /> Projects
         </NavLink>
         <NavLink to="blogs" end={true}>
-          <FaBloggerB  /> Blogs
+          <FaBloggerB /> Blogs
         </NavLink>
       </div>
       <div className="bottomDiv">
-        <Link to="login" className="loginBtn">
-          Login <FaArrowRight />
-        </Link>
+        {user ? (
+          <ProfileBanner user={user} />
+        ) : (
+          <Link to="login" className="loginBtn">
+            Login <FaSignInAlt />
+          </Link>
+        )}
       </div>
     </nav>
   )

@@ -1,6 +1,7 @@
 :root {
   --color-nav: #282c34;
   --color-cwb: #e25124;
+  --color-grey-1: #efefef;
 }
 
 * {
@@ -16,6 +17,7 @@ html {
 body {
   font-family: 'Noto Sans Mono', monospace;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -32,4 +34,8 @@ ul {
 
 img {
   width: 100%;
+}
+
+.mainBody {
+  padding-left: 300px;
 }

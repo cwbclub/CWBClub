@@ -1,8 +1,8 @@
 .loginBody {
-  padding-left: 300px;
   display: grid;
   place-items: center;
   min-height: 100vh;
+  background-color: var(--color-grey-1);
 }
 
 .loginCard {
@@ -14,6 +14,7 @@
   text-align: center;
   border: 2px solid rgb(187, 187, 187);
   border-radius: 7px;
+  background-color: white;
 }
 
 .loginCard h3 {
@@ -24,4 +25,26 @@
 .loginCard button {
   padding: 7px 10px;
   font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.loginCard button svg {
+  font-size: 1.2rem;
+}
+.loginCard button:disabled svg {
+  opacity: 0.3;
+}
+
+.loginCard button:nth-child(2) svg {
+  color: #ea4335;
+}
+.loginCard button:nth-child(3) svg {
+  color: #1877f2;
+}
+
+.loginCard button:nth-child(4) svg {
+  color: #131418;
 }
